@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>Google Analytics</display_name>
+    <icon>fa-google</icon>
+    <description>
+        Añade soporte para inserción de código de Google Analytics en el contexto global o sobre
+        entradas individuales por medio de los campos personalizados.
+    </description>
+    
+    <settings_data>
+        <title>Google Analytics</title>
+        
+        <specs key="sitewide_code">
+            <title>Código de inserción global</title>
+            <description><![CDATA[
+                Pegar el código de invocación de Google Analytics a insertar en la etiqueta <code>head</code>
+                de todo el sitio web.<br><br>
+                
+                Si deseas especificar código de invocación específico para entradas individuales, simplemente
+                añade en el editor un campo personalizado, nómbralo <code>google_analytics</code>
+                y pega el código de invocación a insertar en la entrada en lugar del código global.<br><br>
+                
+                <i class="fa fa-info-circle"></i>
+                <b>Nota:</b> el código sólo será insertado en las distribuciones <b>Home</b> (Inicio),
+                <b>Main</b> (Principal) y <b>Popup</b> de las plantillas.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+    </settings_data>
+    
+</language>
