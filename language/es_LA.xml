@@ -8,6 +8,27 @@
         entradas individuales por medio de los campos personalizados.
     </description>
     
+    <default_gdpr_message><![CDATA[
+        <b>Valuamos tu privacidad</b>
+        <br><br>
+        Usamos cookies para mejorar tu experiencia en la navegación, mostrarte anuncios personalizados o contenido,
+        y analizar nuestro tráfico.
+        <br><br>
+        Al dar click en "Aceptar todo", nos das tu consentimiento de usar cookies, las cuales están protegidas por nuestra
+        Política de Privacidad.
+        La preferencias se almacenan en tu navegador por 60 días, y puedes removerlas en cualquier momento.
+    ]]></default_gdpr_message>
+    
+    <ad_storage>Alamcenamiento de anuncios</ad_storage>
+    <ad_user_data>Datos de anuncios del usuario</ad_user_data>
+    <ad_personalization>Personalización de anuncios</ad_personalization>
+    <analytics>Estadísticas de uso</analytics>
+    
+    <customize>Elegir</customize>
+    <accept_selections>Aceptar selecciones</accept_selections>
+    <reject_all>Rechazar todo</reject_all>
+    <accept_all>Aceptar todo</accept_all>
+    
     <settings_data>
         <title>Google Analytics</title>
         
@@ -27,7 +48,24 @@
             ]]></description>
             <type>code</type>
         </specs>
-        
+
+        <specs key="include_gdpr_box">
+            <title>Incluír solicitud de permiso de cookies</title>
+            <description><![CDATA[
+                Habilita esta opción para solicitar a los visitantes permiso para almacenar cookies.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
+
+        <specs key="gdpr_box_legend">
+            <title>Leyenda de la solicitud</title>
+            <description><![CDATA[
+                Define el mensaje que se deberá mostrar como solicitud. Si lo omites, se mostrará un mensaje predeterminado.
+                Type the markup to show as request. A default one will be used if left empty.
+            ]]></description>
+            <type>code</type>
+        </specs>
+
     </settings_data>
     
 </language>

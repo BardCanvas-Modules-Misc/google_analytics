@@ -8,6 +8,25 @@
         by using custom fields.
     </description>
     
+    <default_gdpr_message><![CDATA[
+        <b>We value your privacy</b>
+        <br><br>
+        We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic.
+        <br><br>
+        By clicking "Accept All" you consent to our use of cookies, which are protected under the terms of our Privacy Policy.
+        Preferences are stored in your browser for 60 days, and you can remove them at any time.
+    ]]></default_gdpr_message>
+    
+    <ad_storage>Ad storage</ad_storage>
+    <ad_user_data>Ad user data</ad_user_data>
+    <ad_personalization>Ad personalization</ad_personalization>
+    <analytics>Analytics</analytics>
+    
+    <customize>Customize</customize>
+    <accept_selections>Accept selections</accept_selections>
+    <reject_all>Reject all</reject_all>
+    <accept_all>Accept all</accept_all>
+    
     <settings_data>
         <title>Google Analytics</title>
         
@@ -24,6 +43,22 @@
                 <i class="fa fa-info-circle"></i>
                 <b>Note:</b> the code will be inserted only on the <b>Home</b>, <b>Main</b> and <b>Popup</b> layouts of
                 the templates.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="include_gdpr_box">
+            <title>Show GDPR box</title>
+            <description><![CDATA[
+                Enable this option to ask guests for permission to store cookies.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
+        
+        <specs key="gdpr_box_legend">
+            <title>GDPR box legend</title>
+            <description><![CDATA[
+                Type the markup to show as request. A default one will be used if left empty.
             ]]></description>
             <type>code</type>
         </specs>

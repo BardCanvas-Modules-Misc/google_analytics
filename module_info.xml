@@ -13,6 +13,7 @@
     
     <template_includes>
         <html_head>html_head.inc</html_head>
+        <pre_eof>pre_eof.inc</pre_eof>
     </template_includes>
     
 </module>
